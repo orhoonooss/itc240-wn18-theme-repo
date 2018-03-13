@@ -1,6 +1,6 @@
 <?php include 'includes/config.php'?>
-<?php include 'includes/header.php'?>
-
+<?php get_header()?>
+<h2>Contact Us</h2>
 <?php
 //contact.php
 
@@ -104,7 +104,7 @@ if(isset($_POST['Submit']))
 }    
 ?>
 </section>
-<?php include 'includes/footer.php';
+<?php get_footer();
 function miami_post($key)
 {
     if(isset($_POST[$key])){

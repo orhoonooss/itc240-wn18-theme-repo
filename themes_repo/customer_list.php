@@ -1,9 +1,9 @@
 <?php
 //customer_list.php - shows a list of customer data
 ?>
-<?php include 'includes/config.php';?>
-<?php include 'includes/header.php';?>
-<h1>Customer List</h1>
+<?php include 'includes/config.php'?>
+<?php get_header()?>
+<h2>Customer List</h2>
 <?php
 $sql = "select * from test_Customers";
 //we connect to the db here
@@ -38,4 +38,4 @@ if(mysqli_num_rows($result) > 0)
 @mysqli_close($iConn);
 
 ?>
-<?php include 'includes/footer.php';?>
+<?php get_footer()?>

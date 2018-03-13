@@ -1,5 +1,5 @@
 <?php include 'includes/config.php'?>
-<?php include 'includes/header.php'?>
+<?php get_header()?>
 <?php
 //daily_view.php
     
@@ -73,4 +73,4 @@ switch($myDay) {
         <p class="daily"><?=$myText?></p>    
    <?php echo '<p><a href="daily.php">Go Back</a></p>'; ?>
 </section>
-<?php include 'includes/footer.php'?> 
+<?php get_footer()?>
